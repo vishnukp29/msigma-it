@@ -5,6 +5,8 @@ import Grid from "@mui/material/Grid";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import RemoveIcon from "@mui/icons-material/Remove";
 import SouthEastIcon from "@mui/icons-material/SouthEast";
+import ReactPlayer from "react-player";
+import demoVideo from "../../assets/demo.mp4";
 
 const CorpTraining = () => {
   return (
@@ -182,8 +184,6 @@ const CorpTraining = () => {
             </Typography>
           </Box>
         </Grid>
-
-        
       </Grid>
 
       <Grid
@@ -223,10 +223,8 @@ const CorpTraining = () => {
               overall operational efficiency.
             </Typography>
           </Box>
-        </Grid>
-        
-        <Grid item xs={12} md={6} sx={{ width: "50%", mt: 2, px: 2 }}>
-          <Box>
+
+          <Box sx={{ mt: 4 }}>
             <Typography variant="h6">
               Access to Training Metrics and Standards:
             </Typography>
@@ -298,6 +296,20 @@ const CorpTraining = () => {
               <RemoveIcon sx={{ fontSize: 12 }} /> Hands-on training with
               real-world project scenarios.
             </Typography>
+          </Box>
+        </Grid>
+
+        <Grid item xs={12} md={6} sx={{ width: "50%", px: 2 }}>
+          <Box sx={{ mt: { xs: -10, md: 0.2 } }}>
+            <ReactPlayer width="100%" url={demoVideo} controls={true} />
+          </Box>
+          <Box sx={{ display: "flex", flexDirection:"row", justifyContent:"space-between", alignItems:"center", width:"100%", mt:2 }}>
+            <Box sx={{ width:"50%"}}>
+              <ReactPlayer width="90%" height="100%" url={demoVideo} controls={true} />
+            </Box>
+            <Box sx={{ width:"50%"}}>
+              <ReactPlayer width="90%"  height="100%" url={demoVideo} controls={true} />
+            </Box>
           </Box>
         </Grid>
       </Grid>

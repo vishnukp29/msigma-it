@@ -4,7 +4,6 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import ReactPlayer from "react-player";
 import demoVideo from "../../assets/demo.mp4";
-import { BorderAllRounded } from "@mui/icons-material";
 
 const VideoPlayers = () => {
   return (
