@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import RemoveIcon from "@mui/icons-material/Remove";
+
 const Training = () => {
   return (
     <Box sx={{ width: "100%", my: 10 }}>
