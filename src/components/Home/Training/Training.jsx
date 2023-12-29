@@ -23,7 +23,7 @@ const Training = () => {
           flexDirection: "row",
           justifyContent: "space-between",
         }}
-      >
+       >
         <Grid item xs={12} md={6} sx={{ width: "50%", mt: 2, px: 2 }}>
           <Box>
             <Typography

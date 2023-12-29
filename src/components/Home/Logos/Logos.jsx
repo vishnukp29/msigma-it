@@ -27,6 +27,7 @@ const Logos = () => {
         className={classes.image}
         src={logo}
         alt="LOGO"
+        Style="width: 100%"
       />
     </Box>
   );
