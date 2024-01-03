@@ -5,6 +5,7 @@ import { routes } from "./routes";
 import Preloader from "components-shared/Preloader/Preloader";
 import HomePage from "Pages/HomePage";
 import LandDPage from "Pages/L&D/LandDPage";
+import Blog from "Pages/Blog";
 
 const Login = lazy(() => import("components/Login"));
 
@@ -16,6 +17,7 @@ export default function AppRouter() {
         <Route path={routes.Login} element={<Login />} />
         <Route path={routes.HomePage} element={<HomePage />} />
         <Route path={routes.LandDPage} element={<LandDPage />} />
+        <Route path={routes.Blog} element={<Blog />} />
       </Routes>
     </Suspense>
   );
